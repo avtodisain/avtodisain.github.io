@@ -1,12 +1,12 @@
-html, body {  
-  height: 100%;
+body {  
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 div.fon {
   position: absolute;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 50vh;
   background-color: #808000;
