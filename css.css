@@ -11,3 +11,8 @@ div.fon {
   height: 80%;
   background-color: #808000;
 }
+
+div.bottom {
+  width: 100%;
+  position: bottom;
+}
