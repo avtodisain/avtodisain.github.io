@@ -3,6 +3,10 @@ body {
   padding: 0; /* Внутренний отступ между границей и содержимым */
 }
 
+img {
+  right: -10%;
+}
+
 div.fon {
   position: fixed;
   margin: 0;
