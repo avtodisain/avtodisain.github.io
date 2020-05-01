@@ -1,6 +1,6 @@
 body {  
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Внутренний отступ между блоками*/
+  padding: 0; /* Внутренний отступ между границей и содержимым */
 }
 
 div.fon {
@@ -8,6 +8,6 @@ div.fon {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   background-color: #808000;
 }
