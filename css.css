@@ -1,27 +1,21 @@
-body {  
-  margin: 0; /* Внутренний отступ между блоками*/
-  padding: 0; /* Внутренний отступ между границей и содержимым */
-}
 
-div.foto {
-  float: right; /* Выравнивание по правому краю */
-  margin: 0 0 0 100px; /* Отступы вокруг фотографии */
+#header{
+    height: 300px; /* Высота */
+    background: #25b33f; /* Фоновый цвет */
+    margin-bottom: 10px; /* Отступ снизу */
 }
-
-div.fon {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #556B2F;
+#panel{
+    height: 80px; /* Высота, временная. Высота всем блокам задаётся только для предварительной отладки. В дальнейшем высота будет определяться автоматически в зависимости от содержания блока. */
+    background: #2ff553; /* Фоновый цвет */
+    margin-bottom: 10px; /* Отступ снизу */
 }
-
-div.bottom {
-  width: 100%;
-  position: bottom;
+#content{
+    height: 80px; /* Высота, временная */
+    background: #9ef7af; /* Фоновый цвет */
+    margin-bottom: 10px; /* Отступ снизу */
 }
-
-h1.color {
-  color: #fff;
+#footer{
+    height: 80px; /* Высота */
+    background: #41874e; /* Фоновый цвет */
+    margin-bottom: 10px; /* Отступ снизу */
 }
