@@ -1,21 +1,53 @@
+body {
+	margin: 0px;
+}
 
 #header{
-    height: 300px; /* Высота */
-    background: #25b33f; /* Фоновый цвет */
-    margin-bottom: 10px; /* Отступ снизу */
+	width: 100%;
+    height: 300px;
+	margin: 0px;
 }
+
 #panel{
-    height: 80px; /* Высота, временная. Высота всем блокам задаётся только для предварительной отладки. В дальнейшем высота будет определяться автоматически в зависимости от содержания блока. */
-    background: #2ff553; /* Фоновый цвет */
-    margin-bottom: 10px; /* Отступ снизу */
+    width: 100%;
+    height: 0px;
+    background: #2ff553; 
+	margin: 0px;
 }
+
 #content{
-    height: 80px; /* Высота, временная */
-    background: #9ef7af; /* Фоновый цвет */
-    margin-bottom: 10px; /* Отступ снизу */
+	width: 100%;
+    background: #9ef7af;
+	margin: 0px;
 }
+
 #footer{
-    height: 80px; /* Высота */
-    background: #41874e; /* Фоновый цвет */
-    margin-bottom: 10px; /* Отступ снизу */
+    height: 50px; 
+	width: 100%;
+    background: #41874e;
+	margin: 0px;
+}
+
+.text {
+	padding: 10px;
+}
+
+#photo1 {
+	float: right;
+	padding: 10px;
+	background-color:#006400;
+	width: 430px;
+	text-align: right;
+	background-image: url("fonheader.png");
+	background-repeat: no-repeat;
+	background-position:left;
+}
+
+#textheader{
+	padding: 10px;
+	height: 300px;
+	background-color:#008100;
+	font-style: italic;
+	color: white;
+	font-size: x-large;
 }
