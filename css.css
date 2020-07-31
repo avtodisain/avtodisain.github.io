@@ -1,54 +1,53 @@
 body {
-	margin: 0px;
-}
-
-#header{
-	width: 100%;
-    height: 400px;
-	margin: 0px;
-	background: #0080d6;
-}
-
-#content{
-	width: 100%;
-    background: #9ef7af;
-	margin: 0px;
-}
-
-#footer{
-    height: 100px; 
-	width: 100%;
-    background: #41874e;
-	margin: 0px;
-}
-
-.text {
-	padding: 10px;
 	margin: 0;
 }
 
-#textheader{
-	padding: 10px;
-	height: 380px;
-	width: 300px;
-	background: #0080d6;
-	font-style: italic;
-	color: white;
-	font-size: x-large;
-	float: left;
+#top_menu{
+	width: 100%;
+	height: 80px;
+	background: #000;
 }
 
-#photo {
-margin: 10px 0 0;
+#info{
+	width: 100%;
+	height: 500px;
+	margin: auto;
 }
 
-#slidbar {
-	float: right;
-	padding:0px;
-	text-align: right;
-	background-color: #119af6;
-	height: 400px;
+      #text_info{
+	      width: 40%;
+          height: 500px;
+		  float: left;
+      }
+
+            #into_text_info{
+				margin-left: 19%;
+				background: #f0eee9;
+				height: 500px;
+				text-indent: 5px;
+            }
+#into_text_info .text{
 	
+}
+
+
+
+      #slid_info{
+		  position: static;
+	      width: 60%;
+	      height: 500px;
+		  float: right;
+      }
+
+#content{
+	width: 100%;
+	background: #181818;
+}
+
+#footer{
+	width: 100%;
+	height: 100px;
+	background: #f0eee9;
 }
 
 
@@ -61,7 +60,7 @@ margin: 10px 0 0;
 
 
 #slider{ /*центровка слайдера*/
-	margin: 0 auto;
+	margin: 81px auto;
 }
 
 #slides article{ /*все изображения справа друг от доруга*/
@@ -79,13 +78,12 @@ margin: 10px 0 0;
 }
 
 article img{ /*размер изображений слайдера*/
-	width: 800px;
+	width: 100%;
 	display: inline-block;
-	float: left/right;
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 800px; /*максимальнная длинна*/
+	max-width: 600px; /*максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
