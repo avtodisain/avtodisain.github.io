@@ -10,31 +10,23 @@ body {
 
 #info{
 	width: 1000px;
-	height: 500px;
+	height: 407px;
 	margin: auto;
 }
 
       #text_info{
-	      width: 400px;
-          height: 500px;
+	      width: 380px;
+          height: 407px;
 		  float: left;
-		  background: #FF0000;
+		  background: #f0eee9;
       }
 
-            #into_text_info{
-				background: #f0eee9;
-				height: 500px;
-				text-indent: 5px;
-            }
-
-                  #into_text_info .text{	
-                  }
 
       #slid_info{
 		  position: static;
-	      width: 600px;
-	      height: 600px;
-		  float: right;
+	      width: 580px;
+	      height: 407px;
+		  float: right;;
       }
 
 #content{
@@ -58,7 +50,7 @@ body {
 
 
 #slider{ /*центровка слайдера*/
-	margin: 81px auto;
+	margin: 40px auto;
 }
 
 #slides article{ /*все изображения справа друг от доруга*/
@@ -81,7 +73,7 @@ article img{ /*размер изображений слайдера*/
 }
 
 #desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 600px; /*максимальнная длинна*/
+	max-width: 580px; /*максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
