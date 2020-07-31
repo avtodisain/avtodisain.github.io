@@ -9,33 +9,31 @@ body {
 }
 
 #info{
-	width: 100%;
+	width: 1000px;
 	height: 500px;
 	margin: auto;
 }
 
       #text_info{
-	      width: 40%;
+	      width: 400px;
           height: 500px;
 		  float: left;
+		  background: #FF0000;
       }
 
             #into_text_info{
-				margin-left: 19%;
 				background: #f0eee9;
 				height: 500px;
 				text-indent: 5px;
             }
-#into_text_info .text{
-	
-}
 
-
+                  #into_text_info .text{	
+                  }
 
       #slid_info{
 		  position: static;
-	      width: 60%;
-	      height: 500px;
+	      width: 600px;
+	      height: 600px;
 		  float: right;
       }
 
