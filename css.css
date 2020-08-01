@@ -9,6 +9,10 @@ body {
 	background: #000;
 }
 
+      #into_top_menu{
+		  width: 1000px;
+      }
+
 #info{
 	width: 1000px;
 	height: 407px;
