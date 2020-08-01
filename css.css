@@ -34,11 +34,23 @@ body {
 	background: #181818;
 }
 
+      #into_content{
+		  width: 1000px;
+		  margin: auto;
+      }
+
 #footer{
 	width: 100%;
 	height: 100px;
 	background: #f0eee9;
 }
+
+      #into_footer{
+	      width: 1000px;
+	      height: 100px;
+	      background: #f0eee9;
+		  margin: auto;
+      }
 
 
 
