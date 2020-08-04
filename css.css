@@ -12,7 +12,6 @@ body {
 #info{
 	width: 100%;
 	height: 90vh;
-	background: #FFFF00;
 	overflow:hidden;
 	position: relative;
 }
@@ -20,14 +19,13 @@ body {
       #text_info{
 	      width: 40%;
 		  float: left;
-		  background: #f0eee9;
       }
 
             #block_text{
 				float: right;
 				width: 90%;
 				height: 90vh;
-				background: #BDB76B;
+				background: #f0eee9;
             }
 
 
@@ -35,12 +33,10 @@ body {
 		  position: static;
 	      width: 60%;
 		  float: right;
-		  background: #FF4500;
       }
 
             #block_slid {
 	            width: 90%;
-				background: #4682B4;
 				margin: auto;
 				margin-top: 11%;
             }
@@ -53,152 +49,6 @@ body {
 
 #footer{
 	width: 100%;
-	height: 100px;
-	background: #f0eee9;
-}
-
-
-
-
-
-
-
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	margin: auto;
-}
-
-.swim {
-	width: 100%;
-	position: relative;
-	z-index: 1;
-}
-
-#slides{ /*блок с рядом изображений*/
-	width: 500%;
-	margin: auto;
-}
-
-#imges img{ /*блок с отдельным изображением*/
-	width: 20%; /*кол-во картинок поделить на 100%*/
-	float: left;
-}
-
-/*позиция изображения при активации переключателя*/
-#switch1:checked ~ #overflow .swim{
-	margin-left: 0;
-}
-
-#switch2:checked ~ #overflow .swim{
-	margin-left: -100%;
-}
-
-#switch3:checked ~ #overflow .swim{
-	margin-left: -200%;
-}
-
-#switch4:checked ~ #overflow .swim{
-	margin-left: -300%;
-}
-
-#switch5:checked ~ #overflow .swim{
-	margin-left: -400%;
-}
-
-input {
-	display: none;
-}
-
-#controls label {
-	
-}
-
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
-	width: 15px;
-	height: 15px;
-	background: #bbb;
-}
-
-#active{ /*расположение блока с переключателями*/
-	text-align: center;
-	position: relative;
-	z-index: 2;
-	margin-bottom: -19px;
-	bottom:30px;
-}
-
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
-	cursor: pointer;
-}
-
-#active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
-	border-color: #777 !important; /*выполнение в любом случае*/
-}
-
-/*цвет активного лейбла при активации чекбокса*/
-#switch1:checked ~ #overflow #active label:nth-child(1),
-#switch2:checked ~ #overflow #active label:nth-child(2),
-#switch3:checked ~ #overflow #active label:nth-child(3),
-#switch4:checked ~ #overflow #active label:nth-child(4),
-#switch5:checked ~ #overflow #active label:nth-child(5){
-	background: #18a3dd;
-	border-color: #18a3dd !important;
-}
-
-
-#controls{ /*положение блока всех управляющих элементов*/
-	width: 100%;
-	height: 37px;
-	position: absolute;
-	z-index: 3;
-	bottom: 55%;
-	margin-bottom: -37px;
-}
-
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #overflow #controls label:nth-child(5), 
-#switch2:checked ~ #overflow #controls label:nth-child(1),
-#switch3:checked ~ #overflow #controls label:nth-child(2),
-#switch4:checked ~ #overflow #controls label:nth-child(3),
-#switch5:checked ~ #overflow #controls label:nth-child(4){
-	background: url("slider/prev1.png") no-repeat; /*заливка фона картинкой без повторений*/
-	float: left;
-	display: block;
-	height: 37px;
-	width: 37px;
-	margin-bottom: -37px;
-	margin-left: 10px;
-}
-
-/*настройка переключения и положения для правой стрелки*/
-#switch1:checked ~ #overflow #controls label:nth-child(2), 
-#switch2:checked ~ #overflow #controls label:nth-child(3),
-#switch3:checked ~ #overflow #controls label:nth-child(4),
-#switch4:checked ~ #overflow #controls label:nth-child(5),
-#switch5:checked ~ #overflow #controls label:nth-child(1){
-	background: url("slider/next1.png") no-repeat; /*заливка фона картинкой без повторений*/
-	float: right;
-	display: block;
-	height: 37px;
-	width: 37px;
-	margin-bottom: -37px;
-	margin-right: 10px;
-}
-
-#overflow .swim { /*анимация пролистывания изображений*/
-	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
-
-#controls label:hover{ /*прозрачность стрелок при наведении*/
-	opacity: 0.6;
-}
-
-#controls label{ /*прозрачность стрелок при отводе курсора*/
-	transition: opacity 0.2s ease-out;
+	height: 10vh;
+	background: #000;
 }
