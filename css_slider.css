@@ -2,7 +2,6 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	margin: auto;
 }
 
 .swim {
@@ -12,52 +11,81 @@
 }
 
 #slides{ /*блок с рядом изображений*/
-	width: 500%;
+	width: 1000%;
 	margin: auto;
 	overflow: hidden;
 }
 
 .images img{ /*блок с отдельным изображением*/
-	width: 20%; /*кол-во картинок поделить на 100%*/
+	width: 10%; /*кол-во картинок поделить на 100%*/
 	float: left;
 }
-
-
 
 
 /*увеличение картинки*/
 #switch1:checked ~ #overflow .swim #img1 img {
 	animation-name: slid;
-	animation-duration: 5s;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
 }
 
 #switch2:checked ~ #overflow .swim #img2 img {
 	animation-name: slid;
-	animation-duration: 5s;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
 }
 
 #switch3:checked ~ #overflow .swim #img3 img {
 	animation-name: slid;
-	animation-duration: 5s;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
 }
 
 #switch4:checked ~ #overflow .swim #img4 img {
 	animation-name: slid;
-	animation-duration: 5s;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
 }
 
 #switch5:checked ~ #overflow .swim #img5 img {
 	animation-name: slid;
-	animation-duration: 5s;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+}
+
+#switch6:checked ~ #overflow .swim #img6 img {
+	animation-name: slid;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+}
+
+#switch7:checked ~ #overflow .swim #img7 img {
+	animation-name: slid;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+}
+
+#switch8:checked ~ #overflow .swim #img8 img {
+	animation-name: slid;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+}
+
+#switch9:checked ~ #overflow .swim #img9 img {
+	animation-name: slid;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
+}
+
+#switch10:checked ~ #overflow .swim #img10 img {
+	animation-name: slid;
+	animation-duration: 2s;
+	animation-fill-mode:forwards;
 }
 @keyframes slid{
 	0% {transform: scale(1.1);}
-	100% {transform: scale(1);}
+	100% {transform: scale(1.005);}
 }
-
-
-
-
 
 
 /*позиция изображения при активации переключателя*/
@@ -81,6 +109,26 @@
 	margin-left: -400%;
 }
 
+#switch6:checked ~ #overflow .swim{
+	margin-left: -500%;
+}
+
+#switch7:checked ~ #overflow .swim{
+	margin-left: -600%;
+}
+
+#switch8:checked ~ #overflow .swim{
+	margin-left: -700%;
+}
+
+#switch9:checked ~ #overflow .swim{
+	margin-left: -800%;
+}
+
+#switch10:checked ~ #overflow .swim{
+	margin-left: -900%;
+}
+
 input {
 	display: none;
 }
@@ -94,7 +142,7 @@ input {
 	display: inline-block; /*расположение в строку*/
 	width: 15px;
 	height: 15px;
-	background: #bbb;
+	background: #bbbbbb;
 }
 
 #active{ /*расположение блока с переключателями*/
@@ -110,8 +158,8 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
-	border-color: #777 !important; /*выполнение в любом случае*/
+	background: #646464;
+	border-color: #646464 !important; /*выполнение в любом случае*/
 }
 
 /*цвет активного лейбла при активации чекбокса*/
@@ -119,9 +167,14 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch2:checked ~ #overflow #active label:nth-child(2),
 #switch3:checked ~ #overflow #active label:nth-child(3),
 #switch4:checked ~ #overflow #active label:nth-child(4),
-#switch5:checked ~ #overflow #active label:nth-child(5){
-	background: #18a3dd;
-	border-color: #18a3dd !important;
+#switch5:checked ~ #overflow #active label:nth-child(5),
+#switch6:checked ~ #overflow #active label:nth-child(6),
+#switch7:checked ~ #overflow #active label:nth-child(7),
+#switch8:checked ~ #overflow #active label:nth-child(8),
+#switch9:checked ~ #overflow #active label:nth-child(9),
+#switch10:checked ~ #overflow #active label:nth-child(10){
+	background: #181818;
+	border-color: #181818 !important;
 }
 
 
@@ -136,11 +189,16 @@ label, a{ /*при наведении на стрелки или переклю�
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
-#switch1:checked ~ #overflow #controls label:nth-child(5), 
+#switch1:checked ~ #overflow #controls label:nth-child(10), 
 #switch2:checked ~ #overflow #controls label:nth-child(1),
 #switch3:checked ~ #overflow #controls label:nth-child(2),
 #switch4:checked ~ #overflow #controls label:nth-child(3),
-#switch5:checked ~ #overflow #controls label:nth-child(4){
+#switch5:checked ~ #overflow #controls label:nth-child(4),
+#switch6:checked ~ #overflow #controls label:nth-child(5),
+#switch7:checked ~ #overflow #controls label:nth-child(6),
+#switch8:checked ~ #overflow #controls label:nth-child(7),
+#switch9:checked ~ #overflow #controls label:nth-child(8),
+#switch10:checked ~ #overflow #controls label:nth-child(9){
 	background: url("slider/prev1.png") no-repeat; /*заливка фона картинкой без повторений*/
 	float: left;
 	display: block;
@@ -155,7 +213,12 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch2:checked ~ #overflow #controls label:nth-child(3),
 #switch3:checked ~ #overflow #controls label:nth-child(4),
 #switch4:checked ~ #overflow #controls label:nth-child(5),
-#switch5:checked ~ #overflow #controls label:nth-child(1){
+#switch5:checked ~ #overflow #controls label:nth-child(6),
+#switch6:checked ~ #overflow #controls label:nth-child(7),
+#switch7:checked ~ #overflow #controls label:nth-child(8),
+#switch8:checked ~ #overflow #controls label:nth-child(9),
+#switch9:checked ~ #overflow #controls label:nth-child(10),
+#switch10:checked ~ #overflow #controls label:nth-child(1){
 	background: url("slider/next1.png") no-repeat; /*заливка фона картинкой без повторений*/
 	float: right;
 	display: block;
